@@ -1,3 +1,10 @@
+## 1.22.4
+### Changed
+- Disabled `party-js` so that the extension would compile
+- Redirected hard-coded links to Groton instance of Blackbaud EMS (and surge.sh) (will eventually set this to an enviroment variable)
+- Fixed a couple typos
+- Updated manifest to v3
+
 ## 1.22.3
 ### Fixed
 - Dynamic Title not clearing after the school day

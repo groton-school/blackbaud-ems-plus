@@ -1,35 +1,40 @@
 {
 
-  "manifest_version": 2,
   "name": "MyGann+",
-  "version": "1.22.3",
+  "manifest_version": 3,
+  "version": "1.22.4",
   "minimum_chrome_version": "60",
   
   "description": "A collection of modules that improve your MyGann experience",
-  "version_name": "1.22.3",
   
+  "version_name": "1.22.4",
   "icons": {
     "128": "assets/icons/icon128.png"
   },
 
   "content_scripts": [
     {
-      "matches": ["https://gannacademy.myschoolapp.com/app/*"],
-      "js": ["fetchContentScript.min.js"]
+      "matches": ["https://groton.myschoolapp.com/app/*"],
+      "js": ["dist/content-script.js"]
     }
    ],
 
    "background": {
-     "scripts": ["dist/install-watch.js"],
-     "persistent": false
+     "service_worker": "dist/install-watch.js",
+     "type": "module"
    },
 
   "permissions": [
     "storage"
   ],
 
-  "web_accessible_resources": [
-    "dist/assets/*"
-  ]
+  "host_permissions": [
+      "https://groton.myschoolapp.com/"
+  ],
+
+  "web_accessible_resources": [{
+    "resources": ["dist/assets/*"],
+    "matches": ["https://groton.myschoolapp.com/*"]
+  }]
 
 }

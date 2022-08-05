@@ -59,7 +59,7 @@ class MessageNotification {
 
     this.messageElem = (
       <a
-        href={`https://gannacademy.myschoolapp.com/app/student#message/conversation/${message.id}`}
+        href={`https://groton.myschoolapp.com/app/student#message/conversation/${message.id}`}
         onClick={ () => this.removeMessage() }
       >
         <div className={identifiers.messageMain}>

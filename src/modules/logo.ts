@@ -22,7 +22,7 @@ function logoMain() {
 
   const contact = ` ====================================================
  Take over MyGann+ for next year!
- 2isperber@gannacademy.org
+ 22isperber@gannacademy.org
  22shirsh@gannacademy.org
  ====================================================`;
 

@@ -8,7 +8,7 @@ import {
   getAssignmentRows,
 } from '~/shared/assignments-center';
 
-import party from 'party-js';
+// import party from 'party-js';
 
 import style from './style.css';
 
@@ -115,11 +115,15 @@ class StatusDropdown {
   private showConfetti() {
     if (!showConfetti) return;
     const random = Math.random();
+    console.log('Pretend confetti just appeared.');
+    /*
+    FIXME party-js won't compile
     if (random < sparkleChance) {
       party.sparkles(this.statusElement);
     } else {
       party.confetti(this.statusElement);
     }
+    */
   }
 
   handleSelectChange() {

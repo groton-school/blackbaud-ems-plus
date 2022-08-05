@@ -45,12 +45,12 @@ export function fetchApi(endpoint: string, opts: RequestInit = {}) {
     'content-type': 'application/json',
   }), headers as Headers);
 
-  return fetchJson(`https://gannacademy.myschoolapp.com${endpoint}`, Object.assign(opts, {
+  return fetchJson(`https://groton.myschoolapp.com${endpoint}`, Object.assign(opts, {
     headers: apiHeaders,
   }));
 }
 
-const DATA_ENDPOINT = 'https://mygannplus-data.surge.sh';
+const DATA_ENDPOINT = 'https://mygrotonplus-data.surge.sh';
 
 // Fetch path from /data endpoint
 export function fetchRawData(name: string) {

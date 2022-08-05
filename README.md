@@ -22,7 +22,7 @@
 ```
 
 ### Bookmarklet Script
-`javascript:fetch('https://mygann-plus-bookmarklet.surge.sh/dist/content-script.js').then(d=>d.text()).then(eval)`
+`javascript:fetch('https://mygroton-plus-bookmarklet.surge.sh/dist/content-script.js').then(d=>d.text()).then(eval)`
 
 ## Remote Disable Format
 

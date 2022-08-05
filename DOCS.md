@@ -75,7 +75,7 @@ For example, recently the Improved Status Dropdown made it impossible to edit ta
 4. Commit and push to GitHub, then create a new GitHub release. The release tag should be vx.y.z (e.g., v1.6.9) and the release name should be "Version x.y.z.". The description of the release should be what was added to the changelog.
 5. Run `npm run build`.
 6. Run `npm run deploy-bookmarklet`
-7. Copy the `dist` folder, the `assets` folder, and the `manifest.json`.into a new folder. Install that folder in Chrome to make sure it works.
+7. Copy the `dist` folder, the `assets` folder, `fetchContentScript.min.js`, and the `manifest.json`.into a new folder. Install that folder in Chrome to make sure it works.
 8. Upload the folder to the Chrome Web Store and publish.
 
 ## Bookmarklet

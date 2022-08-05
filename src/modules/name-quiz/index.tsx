@@ -379,7 +379,7 @@ async function runGame(unloaderContext: UnloaderContext) {
       name: student.name,
       nickname: student.nickName,
       image: await getCDNImageUrl(`user/${student.userPhotoLarge}`),
-      imgurImage: (await getImgurImage(student.Id.toString()))?.link,
+      // imgurImage: (await getImgurImage(student.Id.toString()))?.link,
     })));
 
   if (!students.length) {

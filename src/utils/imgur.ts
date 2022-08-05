@@ -57,7 +57,7 @@ async function resetImage(): Promise<void> {
   const currentImage: imgurImage = await getImgurImage(userId);
 
   if (currentImage) {
-    await fetch(`https://api.imgur.com/3/account/mygannplus/image/${currentImage.deletehash}`, {
+    await fetch(`https://api.imgur.com/3/account/MyGrotonplus/image/${currentImage.deletehash}`, {
       method: 'DELETE',
       headers: await headers,
     });
